@@ -1,5 +1,8 @@
 # 模仿Netty的NIO实现
 这个Demo旨在利用Java原生API模仿Netty的NIO线程模型的设计思想, 以及相关的类架构. 目前只有Acceptor, EventLoop的简单部分, 但是大体结构已经很清晰了.
+
+相关博客已更新, 访问请戳[这里](http://blog.gotz9.cn/archives/)
+
 ## 结构讲解
 ### 概述
 ___Acceptor___是用于接收客户连接请求的线程. 在接收到客户端连接后, 将连接注册到**单线程**EventLoop的selector中. 然后在EventLoop中对于各种异步IO事件进行响应. 响应行为由EventLoop委托ConnectionWrapper执行.
