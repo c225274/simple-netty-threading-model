@@ -1,5 +1,5 @@
 # 模仿Netty的NIO实现
-这个Demo旨在利用Java原生API模仿Netty的NIO线程模型的设计思想, 以及相关的类架构. 目前只有Acceptor, EventLoop的简单部分, 但是大体结构已经很清晰了.
+这个Demo旨在利用Java原生API模仿 Netty 的NIO线程模型的设计, 以及相关的类架构. 目前只有Acceptor, EventLoop的部分.
 
 相关博客已更新, 访问请戳[这里](http://blog.gotz9.cn/archives/)
 
